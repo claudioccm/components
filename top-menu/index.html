@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Top Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="b-top-menu">
+		<div class="b-wrapper">
+			<h1 class="logo"><a href="#">Claudio Mendonça</a></h1>
+			<nav class="menu">
+				<ul class="b-spaceless">
+					<li class="submenu"><a class="menu-item" href="#">About</a>
+						<ul>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+						</ul>
+					</li>
+					<li><a class="menu-item" href="#">Services</a></li>
+					<li class="submenu"><a class="menu-item" href="#">Portfolio</a>
+						<ul>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+						</ul>
+					</li>
+					<li class="submenu"><a class="menu-item" href="#">Contact</a>
+						<ul>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+							<li><a class="submenu-item" href="#">Menu Item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<script src="jquery-2.1.3.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.submenu').click(function() {
+				$(this).toggleClass('m-active');
+			});
+		});
+	</script>
+</body>
+</html>
